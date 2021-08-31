@@ -1,0 +1,316 @@
+header{
+    background-color: #004a7a;
+    height: 80px;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    position: absolute;
+    margin: 20px 0px 0px 620px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    
+    margin-left: 300px;
+}
+
+.Logo{
+    width: 180px;
+    height: 84px;
+    position: fixed;
+    margin: 0px;
+}
+
+nav{
+    background-color: #3084b0;
+    color: black;
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    
+}
+
+nav a{
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 15px 5px;
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: white;
+    background-color: #004a7a;
+    cursor: pointer;
+}
+
+.Home{
+    background-color: #3084b0;
+    color: white;
+    margin: 10px 10px 0px 200px;
+    border-radius: 5px;
+    text-align: center;
+    height: 20px;
+    letter-spacing: 1px;
+}
+
+.H-CarHead{
+    margin: 10px 10px 0px 200px;
+    font-size: 20px;
+    font-family: cursive;
+    border-bottom: 2px solid #004a7a;
+}
+
+video{
+    width: 1050px;
+    height: 400px;
+    margin: 10px 0px 20px 200px;
+    border-collapse: collapse;
+    
+}
+
+
+.H-Car1{
+    margin: 10px 10px 0px 200px;
+    width: 320px;
+}
+
+
+.H-Car2{
+    margin: -246px 10px 0px 555px;
+    width: 320px;
+    object-fit: contain;
+}
+
+.H-Car3{
+    margin: -246px 10px 0px 915px;
+    width: 320px;
+}
+
+img{
+    height: 200px;
+    width: 320px;
+    margin: 10px 0px 10px 0px;
+}
+
+figcaption{
+    color: black;
+    font-family: cursive;
+    text-align: center;
+}
+/*The idea of the figcaption element is taken from w3 schools but I developed the code on my own.( https://www.w3schools.com/tags/tag_figcaption.asp)*/
+
+/*-------------Car.html begins----------*/
+.C-Details{
+    margin: -215px 10px 0px 670px;
+    height: 200px;
+    width: 500px;
+    font-family: cursive;
+}
+.C-Details div{
+    margin-bottom: 12px;
+}
+.C-Div2{
+    margin: -200px 10px 0px 870px;
+    height: 200px;
+    width: 300px;
+}
+
+.C-Div2 div{
+    margin-bottom: 16px;
+}
+
+.C-Div2 progress{
+    width: 150px;
+}
+
+.ImgSize{
+    margin: 20px 10px 10px 200px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.C-inline p{
+    display: inline;
+}
+/*
+.C-Div2 p{
+    display: inline;
+}
+*/
+
+/*------------------------The progress bar design is taken from css tricks website*/
+progress{
+    border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-bar{
+    background: #D3D3D3;
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value{
+    background-color: #3084b0;
+    border-radius: 5px;
+}
+/*-------https://css-tricks.com/html5-progress-element/----------------------*/
+
+/*---------------Vintage cars styles-------------------------------*/
+.V-Striked{
+    text-decoration: line-through;
+}
+
+/*-------For animation of actual price I have seen the below code from stackoverflow website-------*/
+.v-Transition{
+    transition-timing-function: linear;
+    width: 200px;
+    height: 25px;
+    background-color: #3084b0;
+    color: white;
+    transition: auto 2s;
+    animation: imganim 4s infinite linear both;
+}
+
+@keyframes imganim {
+from {width: 20px; height: 35px;}
+to {width: 180px; height: 35px;} 
+}
+/*---------------https://stackoverflow.com/questions/35814483/webkit-transition-without-hover----------------*/
+
+/*------------------------Accessories styles-----------------------------*/
+.AccNoFit{
+    object-fit: none;
+}
+
+.AccBlink {
+  animation: blinker 3s linear infinite;
+    color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/* I have taken the code fro blinking effect from the below website----------------------*/
+/*https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3*/
+
+/*---------------------------Quote for exchange --------------------------*/
+
+.Q-Details{
+    list-style-type: none;
+    padding: 0;
+}
+
+.Q-Data{
+    margin: 20px 0px 10px 200px;
+}
+
+.Q-Inline{
+    background-color: #3084b0;
+    text-align: center;
+    border-radius: 100px;
+    border-top-left-radius: 30px;
+    padding: 0px 3px;
+}
+
+.Q-Form1{
+    width: 300px;
+    height: 250px;
+    
+}
+
+.Q-Form1 input{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.Q-Form2{
+    margin: -250px 0px 0px 330px;
+    width: 300px;
+    height: 250px;
+}
+
+.Q-Form2 input{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.Q-Form3{
+    margin: -250px 0px 0px 660px;
+    width: 300px;
+    height: 150px;
+}
+
+.Q-Form3 div{
+    margin-bottom: 15px;
+}
+
+.Q-Data p{
+    margin-bottom: 10px;
+}
+
+.Q-Data li{
+    margin-bottom: 5px;
+}
+
+.Q-Data button{
+    margin: 70px 0px 0px 450px; 
+    padding: 4px 15px;
+    background-color: #3084b0;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.Q-Data button:hover{
+    background-color: #004a7a;
+    color: white;
+}
+
+/*-------------------------------------------All products ---------------------------*/
+table{
+    border-collapse: separate;
+    border-spacing: -10px 10px;
+    text-align: left;
+}
+
+
+
+.All-Content p,table{
+    margin: 10px 0px 10px 200px;
+}
+
+.All-Cars{
+    margin: 20px 0px 20px 230px;
+    border: 2px solid black;
+    width: 1000px;
+}
+
+.All-Cars th{
+    background-color: #004a7a;
+    color: white;
+    text-align: center;
+}
+
+.All-Cars tr:nth-child(odd){
+    background-color: #a5b0a0;
+    padding: 3px;
+}
+
+.All-Cars tr:nth-child(even){
+    background-color: #70a0a0;
+    padding: 3px;
+}
